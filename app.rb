@@ -42,8 +42,8 @@ class App < Sinatra::Base
       @symb += "/"
     end
 
-    num1 = params[:number1].to_i
-    num2 = params[:number2].to_i
+    num1 = params[:number1]
+    num2 = params[:number2]
   binding.pry
     result = "#{num1 + @symb + num2}"
 
