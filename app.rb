@@ -40,7 +40,7 @@ class App < Sinatra::Base
     elsif @operation == "multiply"
       return num1 * num2
     elsif @operation == "divide"
-      return = num1/num2
+      return num1/num2
     end
   end
   end
