@@ -40,7 +40,8 @@ class App < Sinatra::Base
       @symb += "*"
     elsif @operation == "divide"
       @symbol += "/"
-
+    end
+    binding.pry
     result = "#{params[:number1]} #{@operation} #{params[:number2]}"
 
     result
