@@ -44,10 +44,10 @@ class App < Sinatra::Base
 
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
-
+  binding.pry
     result = "#{num1 + @symb + num2}"
 
-    binding.pry
+
 
     result
   end
