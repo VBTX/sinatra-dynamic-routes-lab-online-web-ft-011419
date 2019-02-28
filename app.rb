@@ -42,13 +42,5 @@ class App < Sinatra::Base
     elsif @operation == "divide"
       num1/num2
     end
-
-
-  binding.pry
-    result = "#{num1 + @symb + num2}"
-
-
-
-    result
   end
   end
