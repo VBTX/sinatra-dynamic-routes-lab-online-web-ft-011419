@@ -19,7 +19,7 @@ class App < Sinatra::Base
     time_num = @number.to_i
     string = ""
     time_num.times do
-      @phrase
+      string += @phrase
     end
 
 
