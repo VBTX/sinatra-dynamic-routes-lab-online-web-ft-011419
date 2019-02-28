@@ -41,11 +41,13 @@ class App < Sinatra::Base
     elsif @operation == "divide"
       @symb += "/"
     end
-    binding.pry
+    
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
 
     result = "#{num1 @symb num2}"
+
+    binding.pry
 
     result
   end
