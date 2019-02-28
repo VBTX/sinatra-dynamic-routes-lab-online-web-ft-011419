@@ -21,6 +21,7 @@ class App < Sinatra::Base
     time_num.times do
       string += @phrase
     end
+    return string
 
 
   end
