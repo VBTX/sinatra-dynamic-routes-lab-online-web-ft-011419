@@ -44,6 +44,6 @@ class App < Sinatra::Base
     binding.pry
     result = "#{params[:number1]} #{@symb} #{params[:number2]}"
 
-    result
+    "#{result}"
   end
   end
