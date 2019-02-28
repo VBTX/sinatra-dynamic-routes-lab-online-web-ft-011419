@@ -31,7 +31,7 @@ class App < Sinatra::Base
 
   get '/:operation/:number1/:number2' do
     @operation = params[:operation]
-    result = "(params[:number1]) #{@operation} (params[:number2])"
+    result = "#{params[:number1]} #{@operation} #{params[:number2]}"
     result
   end
   end
