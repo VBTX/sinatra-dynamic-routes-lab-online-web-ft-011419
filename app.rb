@@ -42,7 +42,7 @@ class App < Sinatra::Base
       @symb += "/"
     end
     binding.pry
-    result = "#{#{params[:number1]} #{@symb} #{params[:number2]}}"
+    result = "#{params[:number1]} #{@symb} + #{params[:number2]}"
 
     result
   end
