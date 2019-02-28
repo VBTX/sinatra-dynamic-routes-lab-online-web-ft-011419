@@ -39,10 +39,10 @@ class App < Sinatra::Base
     elsif @operation == "multiply"
       @symb += "*"
     elsif @operation == "divide"
-      @sym += "/"
+      @symb += "/"
     end
     binding.pry
-    result = "#{params[:number1]} #{@operation} #{params[:number2]}"
+    result = "#{params[:number1]} #{@symb} #{params[:number2]}"
 
     result
   end
